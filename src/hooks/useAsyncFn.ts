@@ -23,7 +23,13 @@ export type AsyncState<T> =
       error?: undefined
       value: T
     }
+// ReturnType<T> 返回的是Promise类型
+// PromiseType 返回的是上一个ReturnType的Promise中的返回数据
+// AsyncState 返回{loading: true  error?: Error | undefinedvalue?: T}
 
+// const [state, callback] = useAsyncFn<() => Promise<{ code: number; data: string }>>()
+// 上面为例 ReturnType<T>为 Promise<{ code: number; data: string } PromiseType为{ code: number; data: string }
+// AsyncState{loading:boolean,error:Error,{ code: number; data: string }}
 type StateFromFnReturningPromise<T extends FnReturningPromise> = AsyncState<PromiseType<ReturnType<T>>>
 
 export type AsyncFnReturn<T extends FnReturningPromise = FnReturningPromise> = [StateFromFnReturningPromise<T>, T]

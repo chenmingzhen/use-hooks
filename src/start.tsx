@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
-import Demo from './test/useAsyncFc'
+import Demo from './test/createGlobalState'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Demo url="www.baidu.com" />
+    <Demo />
   </React.StrictMode>,
   document.getElementById('root')
 )

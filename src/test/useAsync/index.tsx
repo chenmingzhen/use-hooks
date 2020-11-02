@@ -1,7 +1,7 @@
 import React from 'react'
-import useAsync from './hooks/useAsync'
+import useAsync from '../../hooks/useAsync'
 
-const App: React.FC = () => {
+const Demo: React.FC = () => {
   const state = useAsync<{ code: number; data: string }>(async () => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -13,4 +13,4 @@ const App: React.FC = () => {
   return <div>{state.loading ? '加载中' : state.error ? '发生了错误' : `数据是${state?.value?.data}`}</div>
 }
 
-export default App
+export default Demo
