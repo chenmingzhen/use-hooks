@@ -6,13 +6,11 @@ export default function useMountedState(): () => boolean {
 
   useEffect(() => {
     mountedRef.current = true
-    console.log(get(), 'after useMountedState setValue')
 
     return () => {
       mountedRef.current = false
-      console.log(get(), 'useMountedState unmounted')
     }
   })
-  console.log(get(), 'before useMountedState setValue')
+
   return get
 }

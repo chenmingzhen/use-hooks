@@ -1,13 +1,6 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      //      "dom",
-      //      "dom.iterable",
-      //      "esnext"
-      "es2018",
-      "dom"
-    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "jsx": "react",
@@ -23,16 +16,13 @@
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "outDir": "lib",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
     "importHelpers": true
   },
-  /*  "include": [
-      "src"
-      // add new directory
-      // "test"
-    ],*/
   "exclude": [
-    "node_modules",
-    "lib",
-    "esm"
+    "node_modules"
   ]
 }
