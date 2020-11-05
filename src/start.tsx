@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/createGlobalState'
+import { Demo } from './test/createMemo'
 
 ReactDOM.render(
   <React.StrictMode>
