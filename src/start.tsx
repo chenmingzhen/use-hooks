@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Demo } from './test/createMemo'
+import Demo from './test/creareReducer'
 
 ReactDOM.render(
   <React.StrictMode>
