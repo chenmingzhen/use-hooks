@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/creareReducer'
+import Demo from './test/createReducerContext'
 
 ReactDOM.render(
   <React.StrictMode>
