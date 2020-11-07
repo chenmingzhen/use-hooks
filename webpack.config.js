@@ -13,8 +13,8 @@ module.exports = {
     contentBase: './dist', // 监听的文件
     open: true, // 是否自动打开
     port: 3000, // 端口号
-    hot: true,
-    hotOnly: true,
+    /* hot: true,
+    hotOnly: true, */
   },
   module: {
     rules: [
