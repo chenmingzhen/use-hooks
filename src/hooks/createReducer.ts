@@ -10,6 +10,7 @@ interface Store<Action, State> {
 
 type Middleware<Action, State> = (store: Store<Action, State>) => (next: Dispatch<Action>) => (action: Action) => void
 
+// 组合各种中间件
 function composeMiddleware<Action, State>(chain: Middleware<Action, State>[]) {
   return (context: Store<Action, State>, dispatch: Dispatch<Action>) => {
     return chain.reduceRight((res, middleware) => {
@@ -48,6 +49,7 @@ const createReducer = <Action, State>(...middlewares: Middleware<Action, State>[
       )
     )
 
+    //  * 注意 原始initialState改变 源码并不会触发更新 只有dispatch改变才会原始数据值的改变 而dispatch来源于reducer
     useUpdateEffect(() => {
       dispatchRef.current = composedMiddleware(
         {
