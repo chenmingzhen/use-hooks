@@ -6,3 +6,4 @@ export { default as useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffec
 export { default as useMountedState } from './useMountedState'
 export { default as createReducer } from './createReducer'
 export { default as createReducerContext } from './createReducerContext'
+export { default as createStateContext } from './createStateContext'
