@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/createStateContext'
+import Demo from './test/useUpdate'
 
 ReactDOM.render(
   <React.StrictMode>
