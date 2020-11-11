@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useLifecycles'
+import Demo from './test/useEvent'
 
 ReactDOM.render(
   <React.StrictMode>
