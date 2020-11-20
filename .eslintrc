@@ -73,6 +73,7 @@
         ]
       }
     ],
+    "react/jsx-one-expression-per-line": 0,
     //上面是之前的js项目配置
     //typescript
     "@typescript-eslint/semi": 0,
