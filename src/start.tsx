@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useCustomCompareEffect'
+import Demo from './test/useShallowCompareEffect'
 
 ReactDOM.render(
   <React.StrictMode>
