@@ -1,11 +1,11 @@
 import { DependencyList, EffectCallback } from 'react'
-import deepEql from 'deep-eql'
+import { shadowEqual } from '../utils/shadowEqual'
 import useCustomCompareEffect from './useCustomCompareEffect'
 
 const isPrimitive = (val: any) => val !== Object(val)
 
 const shallowEqualDepsList = (prevDeps: DependencyList, nextDeps: DependencyList) =>
-  prevDeps.every((dep, index) => deepEql(dep, nextDeps[index]))
+  prevDeps.every((dep, index) => shadowEqual(dep, nextDeps[index]))
 
 const useShallowCompareEffect = (effect: EffectCallback, deps: DependencyList) => {
   if (process.env.NODE_ENV !== 'production') {
