@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import useGetSet from '../../hooks/useGetSet'
-import useUpdate from '../../hooks/useUpdate'
 
 const Demo = () => {
   const objRef = useRef({ a: 1 })
