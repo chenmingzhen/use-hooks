@@ -1,12 +1,20 @@
-import React, { useCallback } from 'react'
-import useEvent from '../../hooks/useEvent'
+import React, { useEffect, useState } from 'react'
 
 const Demo = () => {
-  const onKeyDown = useCallback(({ key }) => {
-    console.log(key)
-  }, [])
-  useEvent('keydown', onKeyDown)
-  return <div id="useEvent">click me</div>
+  const [obj, setObj] = useState({ a: { b: 1 } })
+
+  useEffect(() => {
+    console.log(obj)
+  }, [obj])
+  return (
+    <div
+      onClick={() => {
+        setObj({ a: { b: new Date().getSeconds() } })
+      }}
+    >
+      click me
+    </div>
+  )
 }
 
 export default Demo
