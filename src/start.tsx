@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useCookie'
+import Demo from './test/useSetState'
 
 ReactDOM.render(
   <React.StrictMode>
