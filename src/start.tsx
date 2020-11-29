@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useSetState'
+import Demo from './test/useCopyToClipboard'
 
 ReactDOM.render(
   <React.StrictMode>
