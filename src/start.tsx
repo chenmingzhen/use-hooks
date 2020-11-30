@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useCopyToClipboard'
+import Demo from './test/useTimeoutFn'
 
 ReactDOM.render(
   <React.StrictMode>
