@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useTimeoutFn'
+import Demo from './test/useDebounce'
 
 ReactDOM.render(
   <React.StrictMode>
