@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useLocalStorage'
+import Demo from './test/useRafLoop'
 
 ReactDOM.render(
   <React.StrictMode>
