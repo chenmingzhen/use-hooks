@@ -2,6 +2,7 @@ import { useRef, useCallback, DependencyList } from 'react'
 
 type UseThrottleReturn = [() => void]
 
+// 根据调用节流
 const useThrottle = (fn: Function, ms: number, deps: DependencyList = []): UseThrottleReturn => {
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
