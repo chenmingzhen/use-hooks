@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Demo from './test/useThrottle'
+import Demo from './test/useDefault'
 
 ReactDOM.render(
   <React.StrictMode>
